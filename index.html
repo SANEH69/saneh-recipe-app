@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/style.css" rel="stylesheet" />
     <title>AI recipes</title>
 </head>
 <body>
-    <h1>AI Cook Book Recipes</h1>
+    <h1>AI Cook Book Recipes 🥩</h1>
 
-    <form>
-        <input type="text" placeholder="Search a recipe" id="search-recipe" autofocus/>
-        <input type="submit" id="submit-recipe">
-        <p id="example">i.e Lasagna, BBQ Chicken</p>
+    <form >
+        <input type="text" placeholder="Search for a recipe..." id="search-recipe" class="search-recipe" autofocus/>
+        <input type="submit" id="submit-recipe" class="submit-recipe">
+        <p id="example" class="examples">i.e Lasagna, BBQ Chicken, Carrot cake...</p>
     </form>
 
-    <div id="recipe">•Warm oil on medium heat...</div>
+    <div id="recipe" class="recipe">•Warm oil on medium heat...</div>
 
     <footer>This AI project was put together and perfected by Sanelisiwe Ngubane 🖤</footer>
+    <script src="src/index.js"></script>
 </body>
 </html>
