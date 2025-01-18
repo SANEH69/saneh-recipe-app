@@ -1,4 +1,5 @@
 function displayRecipe(response) {
+    console.log(response);
     new Typewriter('#recipe', {
         strings: response.data.answer,
         autoStart: true,
