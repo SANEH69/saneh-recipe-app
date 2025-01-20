@@ -1,5 +1,4 @@
 function displayRecipe(response) {
-    console.log(response);
     new Typewriter('#recipe', {
         strings: response.data.answer,
         autoStart: true,
@@ -12,7 +11,7 @@ function fetchRecipe(event) {
     event.preventDefault()
     let searchRecipeElement = document.querySelector("#search-recipe");
     let apiKey = "04d1784de2be03a1bd2o2db8tf6b23e4";
-    let context = "You are a very brilliant virtual assistant that know so much about cooking and recipes. Please provide a precise, simple and straightforward recipe. Please provide a picture as well, if you can.";
+    let context = "You are a very brilliant virtual assistant that know so much about cooking and recipes. Please make it a list with bullet points. Please make it prettier. Please leave line spaces between ingredients, the preparation and the serving.";
     let prompt = `Please provide a recipe about ${searchRecipeElement.value}`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
@@ -22,5 +21,5 @@ function fetchRecipe(event) {
     axios.get(apiUrl).then(displayRecipe);
 }
 
-let submitButton = document.querySelector("#submit-recipe");
-submitButton.addEventListener('submit', fetchRecipe);
+let searchButtonElement = document.querySelector(".recipe-search");
+searchButtonElement.addEventListener('submit', fetchRecipe);
