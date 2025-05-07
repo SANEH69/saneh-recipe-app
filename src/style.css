@@ -2,8 +2,8 @@ body {
     text-align: center;
     background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/945/original/pexels-ella-olsson-572949-1640773.jpg?1736963823
     );
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 h1 {
     font-family: sans-serif;
