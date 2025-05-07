@@ -2,6 +2,8 @@ body {
     text-align: center;
     background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/945/original/pexels-ella-olsson-572949-1640773.jpg?1736963823
     );
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1 {
     font-family: sans-serif;
@@ -24,11 +26,34 @@ form {
     padding: 5px;
     border-radius: 5px;
 }
-div {
+.recipe {
     background-color: #ffffff;
     padding: 20px;
     margin: 20px 150px;
     border-radius: 5px;
     opacity: 80%;
     border-top: 5px solid grey;
+}
+footer {
+    margin-bottom: 0px;
+}
+@media (max-width: 1300px) {
+    body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .search-recipe, .submit-recipe {
+        padding: 2px;
+        margin: 0;
+    }
+    form, .recipe {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        text-align: start;
+    }
 }
